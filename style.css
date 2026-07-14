@@ -487,6 +487,10 @@ grid-template-columns:repeat(2,1fr);
 
 .how{
 
+    .how h2{
+    text-align:center;
+}
+
 background:#eef7ff;
 
 }
