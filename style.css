@@ -183,7 +183,10 @@ nav a{
     color:#555;
 
     margin-bottom:40px;
+    
+    text-align:left;
 
+    max-width:600px;
 }
 
 .primary-btn{
