@@ -709,69 +709,31 @@ BENEFITS
 
 .cta-final{
 
+    background:linear-gradient(135deg,#14344d,#1b4868);
+
     padding:100px 20px;
-
-    background:linear-gradient(135deg,#eef7ff,#ffffff);
-
-}
-
-.cta-card{
-
-    max-width:900px;
-
-    margin:auto;
-
-    background:#14344d;
-
-    color:#fff;
 
     text-align:center;
 
-    padding:70px 50px;
-
-    border-radius:28px;
-
-    box-shadow:0 30px 60px rgba(0,0,0,.18);
-
-}
-
-.cta-tag{
-
-    display:inline-block;
-
-    background:rgba(255,255,255,.12);
-
     color:#fff;
 
-    padding:10px 22px;
-
-    border-radius:40px;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    margin-bottom:25px;
-
 }
 
-.cta-card h2{
+.cta-final h2{
 
-    font-size:48px;
+    font-size:52px;
 
-    line-height:1.2;
-
-    margin-bottom:22px;
+    margin-bottom:20px;
 
     color:#fff;
 
 }
 
-.cta-card p{
+.cta-final p{
 
-    max-width:650px;
+    max-width:720px;
 
-    margin:0 auto 35px;
+    margin:0 auto 40px;
 
     font-size:20px;
 
@@ -781,15 +743,31 @@ BENEFITS
 
 }
 
+.cta-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:40px;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+}
+
 .cta-checks{
 
     display:flex;
 
     justify-content:center;
 
-    gap:30px;
-
     flex-wrap:wrap;
+
+    gap:25px;
 
     margin-top:35px;
 
@@ -797,9 +775,7 @@ BENEFITS
 
 .cta-checks span{
 
-    color:#d9f8dc;
-
-    font-size:15px;
+    color:#d6f8d7;
 
     font-weight:600;
 
@@ -807,19 +783,19 @@ BENEFITS
 
 @media(max-width:768px){
 
-.cta-card{
+.cta-final{
 
-    padding:45px 25px;
-
-}
-
-.cta-card h2{
-
-    font-size:34px;
+    padding:75px 20px;
 
 }
 
-.cta-card p{
+.cta-final h2{
+
+    font-size:36px;
+
+}
+
+.cta-final p{
 
     font-size:17px;
 
