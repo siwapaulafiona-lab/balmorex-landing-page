@@ -62,3 +62,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// =========================
+// MOBILE MENU
+// =========================
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+if (menuToggle && navbar) {
+
+    // Open / Close menu
+    menuToggle.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+    });
+
+    // Close menu after clicking a link
+    document.querySelectorAll("#navbar a").forEach(link => {
+        link.addEventListener("click", function () {
+            navbar.classList.remove("active");
+        });
+    });
+
+}
