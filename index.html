@@ -127,11 +127,18 @@
             <!-- Button -->
             <div class="hero-buttons">
 
-              <a href="https://balmorex.pro/welcome/?hopId=12590943-ffef-498a-8f0c-2de0f0e2fb64&shield=4b830-x07nxhv7d1nktls4bk5a"
+<a href="https://balmorex.pro/welcome/?hopId=12590943-ffef-498a-8f0c-2de0f0e2fb64&shield=4b830-x07nxhv7d1nktls4bk5a"
    class="primary-btn"
    target="_blank"
    rel="noopener noreferrer"
-   onclick="fbq('track','InitiateCheckout');">
+   onclick="
+      fbq('track','InitiateCheckout');
+      gtag('event','clickbank_click',{
+          event_category:'Affiliate',
+          event_label:'Balmorex ClickBank',
+          value:1
+      });
+   ">
 
     Learn More
 
@@ -461,15 +468,22 @@ This website provides general educational information only and does not replace 
 
         <div style="text-align:center; margin-top:50px;">
 
-           <a href="https://balmorex.pro/welcome/?hopId=12590943-ffef-498a-8f0c-2de0f0e2fb64&shield=4b830-x07nxhv7d1nktls4bk5a"
+          <a href="https://balmorex.pro/welcome/?hopId=12590943-ffef-498a-8f0c-2de0f0e2fb64&shield=4b830-x07nxhv7d1nktls4bk5a"
    class="primary-btn"
    target="_blank"
    rel="noopener noreferrer"
-   onclick="fbq('track','InitiateCheckout');">
+   onclick="
+      fbq('track','InitiateCheckout');
+      gtag('event','clickbank_click',{
+          event_category:'Affiliate',
+          event_label:'Balmorex ClickBank',
+          value:1
+      });
+   ">
 
-                Learn How to Use Balmorex Pro
+    Learn How to Use Balmorex Pro
 
-            </a>
+</a>
 
         </div>
 
@@ -967,15 +981,22 @@ Our reviews are provided for educational purposes only. We do not manufacture, s
                 listed ingredients, product availability, and other information, you can continue using the link below.
             </p>
 
-            <a href="https://balmorex.pro/welcome/?hopId=12590943-ffef-498a-8f0c-2de0f0e2fb64&shield=4b830-x07nxhv7d1nktls4bk5a"
-               class="primary-btn"
-               target="_blank"
-               rel="nofollow sponsored"
-               onclick="fbq('track','InitiateCheckout');">
+           <a href="https://balmorex.pro/welcome/?hopId=12590943-ffef-498a-8f0c-2de0f0e2fb64&shield=4b830-x07nxhv7d1nktls4bk5a"
+   class="primary-btn"
+   target="_blank"
+   rel="nofollow sponsored noopener noreferrer"
+   onclick="
+      fbq('track','InitiateCheckout');
+      gtag('event','clickbank_click',{
+          event_category:'Affiliate',
+          event_label:'Balmorex ClickBank',
+          value:1
+      });
+   ">
 
-                Continue to Product Information
+    Continue to Product Information
 
-            </a>
+</a>
 
             <div class="cta-checks">
 
@@ -1121,11 +1142,34 @@ Our reviews are provided for educational purposes only. We do not manufacture, s
     </div>
 
 </footer>
-    <button id="topBtn" title="Back to Top">
-        ⬆
-    </button>
-    <script src="script.js"></script>
+
+<button id="topBtn" title="Back to Top">
+    ⬆
+</button>
+
+<!-- Your JavaScript -->
+<script src="script.js"></script>
+
+<!-- ClickBank Tracking -->
+<script>
+document.querySelectorAll('.clickbank-btn').forEach(function(button) {
+
+    button.addEventListener('click', function() {
+
+        // Meta Pixel
+        fbq('track', 'InitiateCheckout');
+
+        // Google Analytics
+        gtag('event', 'clickbank_click', {
+            event_category: 'Affiliate',
+            event_label: 'Balmorex ClickBank',
+            value: 1
+        });
+
+    });
+
+});
+</script>
 
 </body>
-
 </html>
