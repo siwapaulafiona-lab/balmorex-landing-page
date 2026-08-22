@@ -15,6 +15,19 @@
 
 <body>
 
+    <nav class="alerts-nav">
+    <div class="alerts-nav-inner">
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+        <div class="alerts-menu" id="alertsMenu">
+            <a href="index.html">Home</a>
+        </div>
+
+    </div>
+</nav>
     <!-- HERO SECTION -->
     <section class="job-hero">
 
@@ -1511,6 +1524,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+</script>
+
+<script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const alertsMenu = document.getElementById("alertsMenu");
+
+    hamburgerBtn.addEventListener("click", function () {
+        alertsMenu.classList.toggle("active");
+    });
 </script>
 
 </body>

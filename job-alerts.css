@@ -2528,3 +2528,63 @@ h1 span {
     margin: 0;
     border-radius: 50%;
 }
+
+.alerts-nav {
+    width: 100%;
+    background: transparent;
+    position: relative;
+    z-index: 1000;
+}
+
+.alerts-nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.alerts-brand {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.hamburger {
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    color: #0f172a;
+    padding: 4px 8px;
+}
+
+.alerts-menu {
+    position: absolute;
+    top: 65px;
+    right: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    padding: 10px;
+    display: none;
+    min-width: 180px;
+}
+
+.alerts-menu.active {
+    display: block;
+}
+
+.alerts-menu a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.alerts-menu a:hover {
+    color: #128C7E;
+}
