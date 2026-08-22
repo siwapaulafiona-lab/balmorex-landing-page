@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Successful | Daily Job Alerts</title>
+
+    <meta
+        name="description"
+        content="Your Daily Job Alerts subscription is active. Join our WhatsApp Channel to receive fresh job opportunities."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 55%, #f8fafc 100%);
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .success-card {
+            width: 100%;
+            max-width: 520px;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 42px 28px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.10);
+            border: 1px solid #e2e8f0;
+        }
+
+        .success-icon {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: #dcfce7;
+            color: #16a34a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            font-weight: 800;
+        }
+
+        .small-label {
+            display: inline-block;
+            background: #ecfdf5;
+            color: #15803d;
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: 0.3px;
+        }
+
+        h1 {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 14px;
+            font-weight: 800;
+        }
+
+        .main-text {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 26px;
+        }
+
+        .membership-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 20px 18px;
+            margin-bottom: 24px;
+        }
+
+        .membership-icon {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .membership-box strong {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 6px;
+        }
+
+        .membership-box span {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .join-button {
+            display: block;
+            width: 100%;
+            padding: 17px 20px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 800;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.25);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .join-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 25px rgba(37, 211, 102, 0.30);
+        }
+
+        .join-subtext {
+            margin-top: 12px;
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .next-steps {
+            margin-top: 26px;
+            text-align: left;
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .next-steps-title {
+            font-size: 14px;
+            font-weight: 800;
+            color: #166534;
+            margin-bottom: 10px;
+        }
+
+        .next-step {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 9px;
+            color: #475569;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .next-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-check {
+            color: #16a34a;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .support {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .brand {
+            margin-top: 22px;
+            font-size: 13px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 14px;
+            }
+
+            .success-card {
+                padding: 34px 20px;
+                border-radius: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .main-text {
+                font-size: 15px;
+            }
+
+            .join-button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="success-card">
+
+        <!-- SUCCESS ICON -->
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <!-- STATUS -->
+        <div class="small-label">
+            PAYMENT SUCCESSFUL
+        </div>
+
+        <!-- MAIN MESSAGE -->
+        <h1>
+            You're All Set! 🎉
+        </h1>
+
+        <p class="main-text">
+            Thank you for subscribing to Daily Job Alerts.
+            Your subscription has been successfully activated.
+        </p>
+
+        <!-- MEMBERSHIP -->
+        <div class="membership-box">
+
+            <div class="membership-icon">
+                💼
+            </div>
+
+            <strong>
+                Daily Job Alerts Membership
+            </strong>
+
+            <span>
+                Your selected subscription plan is now active.
+                You can access fresh job opportunities and vacancy
+                updates through our WhatsApp Channel.
+            </span>
+
+        </div>
+
+        <!-- WHATSAPP BUTTON -->
+        <!--
+            IMPORTANT:
+            Replace the "#" below with Ajay's REAL WhatsApp Channel link.
+        -->
+
+        <a
+            href="https://whatsapp.com/channel/0029VbDTbQa8vd1XEhHd1G3a"
+            class="join-button"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            🟢 JOIN WHATSAPP CHANNEL
+        </a>
+
+        <p class="join-subtext">
+            Tap the button above to access the Daily Job Alerts WhatsApp Channel.
+        </p>
+
+        <!-- NEXT STEPS -->
+        <div class="next-steps">
+
+            <div class="next-steps-title">
+                What happens next?
+            </div>
+
+            <div class="next-step">
+                <span class="step-check">✓</span>
+                <span>Your Daily Job Alerts subscription is active.</span>
+            </div>
+
+            <div class="next-step">
+                <span class="step-check">✓</span>
+                <span>Join the WhatsApp Channel using the button above.</span>
+            </div>
+
+            <div class="next-step">
+                <span class="step-check">✓</span>
+                <span>Check the channel regularly for new job opportunities.</span>
+            </div>
+
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="support">
+            Having trouble joining the channel?<br>
+            Please contact the Daily Job Alerts support team for assistance.
+        </div>
+
+        <!-- BRAND -->
+        <div class="brand">
+            SabkiShop • Daily Job Alerts
+        </div>
+
+    </main>
+
+</body>
+</html>

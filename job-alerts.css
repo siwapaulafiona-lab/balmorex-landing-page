@@ -1,0 +1,2516 @@
+/* =========================================
+   DAILY JOB ALERTS - HERO
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+}
+
+.job-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+    background:
+        radial-gradient(circle at top right, rgba(37, 211, 102, 0.12), transparent 35%),
+        linear-gradient(135deg, #f8fbff 0%, #eef5f2 100%);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 9px 18px;
+    margin-bottom: 22px;
+    border-radius: 50px;
+    background: #e9f8ef;
+    color: #138a43;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+h1 span {
+    display: block;
+    color: #138a43;
+}
+
+.hero-subtitle {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #596579;
+}
+
+.hero-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 35px;
+}
+
+.hero-tags span {
+    padding: 8px 13px;
+    border-radius: 30px;
+    background: white;
+    border: 1px solid #dce5e0;
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-offer {
+    max-width: 470px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    background: white;
+    border: 1px solid #dfe7e2;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(25, 45, 35, 0.10);
+}
+
+.offer-label {
+    color: #138a43;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.price small {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.offer-description {
+    margin-top: 5px;
+    color: #596579;
+    font-size: 16px;
+}
+
+.saving {
+    margin: 15px 0 22px;
+    font-size: 15px;
+}
+
+.saving span {
+    color: #98a2b3;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.saving strong {
+    color: #138a43;
+}
+
+.hero-cta {
+    display: block;
+    width: 100%;
+    padding: 17px 20px;
+    border-radius: 10px;
+    background: #16a34a;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 800;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(22, 163, 74, 0.25);
+}
+
+.secure-payment {
+    margin-top: 13px;
+    font-size: 12px;
+    color: #7a8699;
+}
+
+.monthly-option {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #596579;
+}
+
+.monthly-option strong {
+    color: #172033;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .job-hero {
+        min-height: auto;
+        padding: 50px 16px;
+    }
+
+    h1 {
+        font-size: 42px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .hero-offer {
+        padding: 25px 20px;
+    }
+
+    .price {
+        font-size: 42px;
+    }
+
+    .hero-tags span {
+        font-size: 13px;
+    }
+}
+
+/* =========================================
+   PAIN / PROBLEM SECTION
+   ========================================= */
+
+.job-pain {
+    padding: 100px 20px;
+    background: #ffffff;
+}
+
+.pain-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pain-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #138a43;
+}
+
+.job-pain h2 {
+    max-width: 720px;
+    margin-bottom: 18px;
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: #111827;
+}
+
+.pain-intro {
+    max-width: 650px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+}
+
+.pain-points {
+    display: grid;
+    gap: 14px;
+}
+
+.pain-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 25px;
+    border: 1px solid #e7ece9;
+    border-radius: 15px;
+    background: #f8faf9;
+}
+
+.pain-number {
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 800;
+    color: #138a43;
+    padding-top: 3px;
+}
+
+.pain-point h3 {
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: #172033;
+}
+
+.pain-point p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #667085;
+}
+
+.pain-transition {
+    margin-top: 70px;
+    padding: 45px 30px;
+    text-align: center;
+    border-radius: 20px;
+    background: #eef8f1;
+}
+
+.pain-transition h2 {
+    max-width: 700px;
+    margin: 0 auto 15px;
+}
+
+.pain-transition h2 span {
+    display: block;
+    color: #138a43;
+}
+
+.pain-transition p {
+    font-size: 18px;
+    color: #596579;
+}
+
+.pain-transition strong {
+    color: #172033;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .job-pain {
+        padding: 70px 16px;
+    }
+
+    .pain-point {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .pain-point h3 {
+        font-size: 18px;
+    }
+
+    .pain-transition {
+        margin-top: 50px;
+        padding: 35px 20px;
+    }
+
+}
+
+/* =========================================
+   BENEFITS / PROMISE SECTION
+   ========================================= */
+
+.job-benefits {
+    padding: 110px 20px;
+    background: #f7faf8;
+}
+
+.benefits-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.benefits-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #138a43;
+}
+
+.benefits-heading h2 {
+    margin-bottom: 20px;
+    font-size: clamp(36px, 5vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: #111827;
+}
+
+.benefits-heading h2 span {
+    color: #138a43;
+}
+
+.benefits-heading > p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+}
+
+
+/* BENEFIT CARDS */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.benefit-card {
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e3ebe6;
+    border-radius: 18px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(25, 45, 35, 0.08);
+}
+
+
+/* ICON */
+
+.benefit-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 14px;
+
+    background: #eaf7ee;
+    color: #138a43;
+
+    font-size: 21px;
+}
+
+
+/* CARD TEXT */
+
+.benefit-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 1.3;
+
+    color: #172033;
+}
+
+.benefit-card p {
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #667085;
+}
+
+
+/* FIFTH CARD */
+
+.benefit-card:last-child {
+    grid-column: 1 / -1;
+
+    max-width: 510px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+
+/* WHATSAPP SUPPORTING CTA */
+
+.benefits-bottom {
+    max-width: 700px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 55px auto 0;
+    padding: 24px 28px;
+
+    background: #eaf7ee;
+    border: 1px solid #d6eddd;
+    border-radius: 16px;
+}
+
+.benefits-bottom-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #138a43;
+    color: #ffffff;
+
+    font-size: 22px;
+}
+
+.benefits-bottom strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 17px;
+    color: #172033;
+}
+
+.benefits-bottom p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #596579;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .job-benefits {
+        padding: 75px 16px;
+    }
+
+    .benefits-heading {
+        margin-bottom: 40px;
+    }
+
+    .benefits-heading h2 {
+        font-size: 38px;
+    }
+
+    .benefits-heading > p {
+        font-size: 16px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .benefit-card {
+        padding: 25px;
+    }
+
+    .benefits-bottom {
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+}
+
+/* =========================================
+   HOW IT WORKS
+   ========================================= */
+
+.how-it-works {
+    padding: 110px 20px;
+    background: #ffffff;
+}
+
+.how-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.how-heading {
+    max-width: 700px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.how-heading h2 {
+    margin-bottom: 20px;
+    font-size: clamp(38px, 5vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: #111827;
+}
+
+.how-heading h2 span {
+    color: #138a43;
+}
+
+.how-heading p {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+}
+
+
+/* STEPS */
+
+.steps {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: start;
+    gap: 20px;
+}
+
+.step {
+    position: relative;
+    text-align: center;
+}
+
+.step-number {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #138a43;
+}
+
+
+/* STEP ICON */
+
+.step-icon {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background: #eaf7ee;
+    color: #138a43;
+
+    font-size: 28px;
+
+    box-shadow: 0 0 0 8px #f5fbf7;
+}
+
+.step h3 {
+    max-width: 230px;
+    margin: 0 auto 12px;
+
+    font-size: 20px;
+    line-height: 1.3;
+
+    color: #172033;
+}
+
+.step p {
+    max-width: 250px;
+    margin: 0 auto;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #667085;
+}
+
+
+/* CONNECTORS */
+
+.step-connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 70px;
+
+    color: #b8cfc0;
+    font-size: 20px;
+}
+
+
+/* SIMPLE PROMISE */
+
+.simple-promise {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 65px;
+}
+
+.promise-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 16px;
+
+    border-radius: 30px;
+
+    background: #f7f9f8;
+
+    color: #667085;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.promise-item i {
+    color: #98a2b3;
+}
+
+.promise-item.highlight {
+    background: #eaf7ee;
+    color: #138a43;
+}
+
+.promise-item.highlight i {
+    color: #138a43;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    .how-it-works {
+        padding: 75px 16px;
+    }
+
+    .how-heading {
+        margin-bottom: 45px;
+    }
+
+    .how-heading h2 {
+        font-size: 40px;
+    }
+
+    .how-heading p {
+        font-size: 16px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .step {
+        padding-bottom: 35px;
+    }
+
+    .step-connector {
+        display: none;
+    }
+
+    .step-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 25px;
+    }
+
+    .simple-promise {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* =========================================
+   JOB ALERT EXAMPLES
+   ========================================= */
+
+.job-alert-examples {
+    padding: 110px 20px;
+    background: #f7faf8;
+}
+
+.alerts-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.alerts-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.alerts-heading h2 {
+    margin-bottom: 20px;
+    font-size: clamp(36px, 5vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: #111827;
+}
+
+.alerts-heading h2 span {
+    color: #138a43;
+}
+
+.alerts-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #667085;
+}
+
+
+/* JOB ALERT CARDS */
+
+.job-alert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.job-alert-card {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #dfe8e2;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(25, 45, 35, 0.07);
+}
+
+.job-alert-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.job-alert-badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #eaf7ee;
+    color: #138a43;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+.job-alert-top > i {
+    color: #25d366;
+    font-size: 22px;
+}
+
+.job-alert-card h3 {
+    margin-bottom: 22px;
+    font-size: 23px;
+    line-height: 1.3;
+    color: #172033;
+}
+
+
+/* JOB DETAILS */
+
+.job-details {
+    display: grid;
+    gap: 13px;
+    margin-bottom: 22px;
+}
+
+.job-detail {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 14px;
+    color: #596579;
+}
+
+.job-detail i {
+    width: 18px;
+    color: #138a43;
+    text-align: center;
+}
+
+
+/* SALARY / REQUIREMENT */
+
+.job-salary {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 14px;
+
+    margin-bottom: 22px;
+
+    border-radius: 10px;
+
+    background: #f7faf8;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #596579;
+}
+
+.job-salary i {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #138a43;
+}
+
+
+/* APPLY BUTTON */
+
+.job-apply {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 14px 17px;
+
+    border-radius: 9px;
+
+    background: #172033;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.job-apply:hover {
+    background: #138a43;
+    transform: translateY(-2px);
+}
+
+
+/* DISCLAIMER */
+
+.alert-disclaimer {
+    max-width: 800px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin: 35px auto 0;
+    padding: 18px 20px;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+    border: 1px solid #e5ebe7;
+}
+
+.alert-disclaimer > i {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: #138a43;
+}
+
+.alert-disclaimer p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #667085;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .job-alert-examples {
+        padding: 75px 16px;
+    }
+
+    .alerts-heading {
+        margin-bottom: 40px;
+    }
+
+    .alerts-heading h2 {
+        font-size: 38px;
+    }
+
+    .alerts-heading p {
+        font-size: 16px;
+    }
+
+    .job-alert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .job-alert-card {
+        padding: 25px;
+    }
+
+}
+
+/* =========================================
+   WHO IS THIS FOR
+   ========================================= */
+
+.who-section {
+    padding: 110px 20px;
+    background: #ffffff;
+}
+
+.who-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.who-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.who-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(38px, 5vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+
+    color: #111827;
+}
+
+.who-heading h2 span {
+    color: #138a43;
+}
+
+.who-heading p {
+    max-width: 620px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #667085;
+}
+
+
+/* WHO CARDS */
+
+.who-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.who-card {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #e4ebe7;
+    border-radius: 16px;
+
+    background: #f8faf9;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.who-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(25, 45, 35, 0.07);
+}
+
+
+/* ICON */
+
+.who-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eaf7ee;
+
+    color: #138a43;
+
+    font-size: 19px;
+}
+
+
+/* TEXT */
+
+.who-card h3 {
+    margin-bottom: 7px;
+
+    font-size: 17px;
+    line-height: 1.35;
+
+    color: #172033;
+}
+
+.who-card p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #667085;
+}
+
+
+/* CLOSING */
+
+.who-closing {
+    max-width: 750px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 60px auto 0;
+    padding: 28px 30px;
+
+    border-radius: 18px;
+
+    background: #172033;
+
+    color: #ffffff;
+}
+
+.who-closing-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #138a43;
+
+    font-size: 18px;
+}
+
+.who-closing h3 {
+    margin: 0;
+
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.who-closing h3 span {
+    color: #6ee7a0;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .who-section {
+        padding: 75px 16px;
+    }
+
+    .who-heading {
+        margin-bottom: 40px;
+    }
+
+    .who-heading h2 {
+        font-size: 40px;
+    }
+
+    .who-heading p {
+        font-size: 16px;
+    }
+
+    .who-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .who-card {
+        padding: 21px;
+    }
+
+    .who-closing {
+        align-items: flex-start;
+
+        margin-top: 45px;
+
+        padding: 24px 20px;
+    }
+
+    .who-closing h3 {
+        font-size: 19px;
+    }
+
+}
+
+/* =========================================
+   PRICING SECTION
+   ========================================= */
+
+.pricing-section {
+    padding: 115px 20px;
+    background: #f7faf8;
+}
+
+.pricing-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.pricing-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.pricing-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(38px, 5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+
+    color: #111827;
+}
+
+.pricing-heading h2 span {
+    color: #138a43;
+}
+
+.pricing-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #667085;
+}
+
+
+/* PRICING GRID */
+
+.pricing-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* PRICING CARDS */
+
+.pricing-card {
+    position: relative;
+
+    padding: 35px 30px;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe8e2;
+}
+
+.monthly-plan {
+    align-self: center;
+}
+
+
+/* PLAN ICON */
+
+.plan-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 14px;
+
+    background: #f0f3f2;
+    color: #596579;
+
+    font-size: 20px;
+}
+
+.annual-icon {
+    background: #dff5e6;
+    color: #138a43;
+}
+
+
+/* PLAN NAME */
+
+.plan-name {
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+
+    color: #667085;
+}
+
+
+/* PRICE */
+
+.pricing-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 44px;
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+
+    color: #111827;
+}
+
+.pricing-card h3 span {
+    margin-left: 5px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    letter-spacing: 0;
+
+    color: #667085;
+}
+
+
+/* DESCRIPTION */
+
+.plan-description {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #667085;
+}
+
+
+/* FEATURES */
+
+.plan-features {
+    display: grid;
+
+    gap: 13px;
+
+    margin: 0 0 28px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #475467;
+}
+
+.plan-features li i {
+    flex-shrink: 0;
+
+    margin-top: 3px;
+
+    color: #138a43;
+    font-size: 13px;
+}
+
+
+/* BEST VALUE */
+
+.best-value {
+    position: absolute;
+
+    top: -13px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background: #138a43;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+
+    box-shadow: 0 5px 15px rgba(19, 138, 67, 0.2);
+}
+
+
+/* ANNUAL PLAN */
+
+.annual-plan {
+    border: 2px solid #138a43;
+
+    box-shadow:
+        0 20px 50px rgba(25, 45, 35, 0.10);
+}
+
+
+/* MONTHLY EQUIVALENT */
+
+.monthly-equivalent {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    color: #596579;
+}
+
+.monthly-equivalent strong {
+    color: #138a43;
+}
+
+
+/* SAVING */
+
+.annual-saving {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.annual-saving span {
+    color: #98a2b3;
+
+    text-decoration: line-through;
+
+    font-size: 14px;
+}
+
+.annual-saving strong {
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    background: #eaf7ee;
+
+    color: #138a43;
+
+    font-size: 12px;
+}
+
+
+/* BUTTONS */
+
+.pricing-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.pricing-button:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background: #172033;
+    color: #ffffff;
+}
+
+.secondary-button:hover {
+    box-shadow: 0 10px 25px rgba(23, 32, 51, 0.18);
+}
+
+.primary-button {
+    background: #16a34a;
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(22, 163, 74, 0.20);
+}
+
+.primary-button:hover {
+    background: #138a43;
+
+    box-shadow:
+        0 12px 28px rgba(22, 163, 74, 0.28);
+}
+
+
+/* PAYMENT NOTE */
+
+.payment-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 12px;
+
+    font-size: 11px;
+
+    color: #98a2b3;
+}
+
+
+/* BOTTOM VALUE */
+
+.pricing-bottom {
+    max-width: 650px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin: 35px auto 0;
+    padding: 20px 24px;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3ebe6;
+}
+
+.pricing-bottom > i {
+    flex-shrink: 0;
+
+    color: #138a43;
+
+    font-size: 20px;
+}
+
+.pricing-bottom p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #667085;
+}
+
+.pricing-bottom strong {
+    color: #172033;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    .pricing-section {
+        padding: 75px 16px;
+    }
+
+    .pricing-heading {
+        margin-bottom: 45px;
+    }
+
+    .pricing-heading h2 {
+        font-size: 40px;
+    }
+
+    .pricing-heading p {
+        font-size: 16px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .annual-plan {
+        order: -1;
+    }
+
+    .pricing-card {
+        padding: 30px 24px;
+    }
+
+    .pricing-card h3 {
+        font-size: 42px;
+    }
+
+    .pricing-bottom {
+        align-items: flex-start;
+
+        padding: 18px;
+    }
+
+}
+
+/* =========================================
+   VALUE ANCHOR SECTION
+   ========================================= */
+
+.value-anchor {
+    padding: 105px 20px;
+    background: #172033;
+    color: #ffffff;
+}
+
+.value-container {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ICON */
+
+.value-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: #6ee7a0;
+
+    font-size: 22px;
+}
+
+
+/* LABEL */
+
+.value-anchor .section-label {
+    color: #6ee7a0;
+}
+
+
+/* HEADING */
+
+.value-anchor h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(38px, 5vw, 54px);
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+    color: #ffffff;
+}
+
+.value-anchor h2 span {
+    display: block;
+    color: #6ee7a0;
+}
+
+
+/* MAIN COPY */
+
+.value-main {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    font-size: 19px;
+    line-height: 1.7;
+
+    color: #cbd5e1;
+}
+
+.value-main strong {
+    color: #ffffff;
+}
+
+
+/* PRICE */
+
+.value-price {
+    margin-bottom: 10px;
+}
+
+.value-price span {
+    display: block;
+
+    font-size: clamp(55px, 8vw, 78px);
+    line-height: 1;
+
+    font-weight: 800;
+    letter-spacing: -3px;
+
+    color: #ffffff;
+}
+
+.value-price p {
+    margin-top: 8px;
+
+    font-size: 15px;
+
+    color: #98a2b3;
+}
+
+
+/* DAILY COST */
+
+.value-daily {
+    margin: 25px 0 20px;
+
+    font-size: 18px;
+
+    color: #cbd5e1;
+}
+
+.value-daily strong {
+    margin-left: 5px;
+
+    color: #6ee7a0;
+
+    font-size: 24px;
+}
+
+
+/* DESCRIPTION */
+
+.value-description {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #98a2b3;
+}
+
+
+/* HIGHLIGHT */
+
+.value-highlight {
+    max-width: 620px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin: 0 auto;
+
+    padding: 20px 24px;
+
+    border: 1px solid rgba(110, 231, 160, 0.2);
+    border-radius: 14px;
+
+    background: rgba(110, 231, 160, 0.06);
+
+    text-align: left;
+}
+
+.value-highlight > i {
+    flex-shrink: 0;
+
+    color: #6ee7a0;
+
+    font-size: 20px;
+}
+
+.value-highlight p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #cbd5e1;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .value-anchor {
+        padding: 75px 16px;
+    }
+
+    .value-anchor h2 {
+        font-size: 40px;
+    }
+
+    .value-main {
+        font-size: 17px;
+    }
+
+    .value-price span {
+        font-size: 60px;
+    }
+
+    .value-highlight {
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+}
+
+/* =========================================
+   FAQ / OBJECTION HANDLING
+   ========================================= */
+
+.faq-section {
+    padding: 110px 20px;
+    background: #ffffff;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.faq-heading {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.faq-heading h2 {
+    margin-bottom: 18px;
+
+    font-size: clamp(38px, 5vw, 54px);
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+    color: #111827;
+}
+
+.faq-heading h2 span {
+    color: #138a43;
+}
+
+.faq-heading p {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #667085;
+}
+
+
+/* FAQ LIST */
+
+.faq-list {
+    border-top: 1px solid #e3ebe6;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e3ebe6;
+}
+
+
+/* QUESTION */
+
+.faq-question {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 23px 5px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #172033;
+
+    text-align: left;
+
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.faq-question i {
+    flex-shrink: 0;
+
+    color: #138a43;
+
+    font-size: 15px;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* ANSWER */
+
+.faq-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.3s ease,
+        padding 0.3s ease;
+}
+
+.faq-answer p {
+    max-width: 750px;
+
+    margin: 0;
+
+    padding: 0 45px 0 5px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #667085;
+}
+
+
+/* OPEN FAQ */
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-item.active .faq-answer p {
+    padding-bottom: 23px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .faq-section {
+        padding: 75px 16px;
+    }
+
+    .faq-heading {
+        margin-bottom: 40px;
+    }
+
+    .faq-heading h2 {
+        font-size: 40px;
+    }
+
+    .faq-question {
+        padding: 20px 2px;
+
+        font-size: 16px;
+    }
+
+    .faq-answer p {
+        padding-left: 2px;
+        padding-right: 25px;
+
+        font-size: 14px;
+    }
+
+}
+
+/* =========================================
+   FINAL CTA
+   ========================================= */
+
+.final-cta {
+    padding: 115px 20px;
+    background: #138a43;
+    color: #ffffff;
+}
+
+.final-cta-container {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ICON */
+
+.final-cta-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    color: #ffffff;
+
+    font-size: 27px;
+}
+
+
+/* LABEL */
+
+.final-cta .section-label {
+    color: #d9fbe4;
+}
+
+
+/* HEADING */
+
+.final-cta h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(40px, 6vw, 62px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    color: #ffffff;
+}
+
+.final-cta h2 span {
+    display: block;
+    color: #d9fbe4;
+}
+
+
+/* DESCRIPTION */
+
+.final-cta-text {
+    max-width: 620px;
+
+    margin: 0 auto 35px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #e8f8ed;
+}
+
+
+/* OFFER */
+
+.final-offer {
+    margin-bottom: 25px;
+}
+
+.final-price {
+    font-size: 58px;
+    line-height: 1;
+
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.final-price span {
+    margin-left: 5px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 0;
+
+    opacity: 0.8;
+}
+
+.final-offer p {
+    margin-top: 8px;
+
+    font-size: 14px;
+
+    color: #d9fbe4;
+}
+
+
+/* BUTTON */
+
+.final-cta-button {
+    max-width: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 0 auto;
+
+    padding: 18px 25px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #138a43;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.final-cta-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* PAYMENT NOTE */
+
+.final-payment-note {
+    margin-top: 14px;
+
+    font-size: 12px;
+
+    color: #d9fbe4;
+}
+
+.final-payment-note i {
+    margin-right: 4px;
+}
+
+
+/* MONTHLY */
+
+.final-monthly {
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    color: #d9fbe4;
+}
+
+.final-monthly strong {
+    color: #ffffff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .final-cta {
+        padding: 80px 16px;
+    }
+
+    .final-cta h2 {
+        font-size: 42px;
+    }
+
+    .final-cta-text {
+        font-size: 16px;
+    }
+
+    .final-price {
+        font-size: 52px;
+    }
+
+    .final-cta-button {
+        width: 100%;
+    }
+
+}
+
+/* =========================================
+   TRUST / FOOTER
+   ========================================= */
+
+.job-footer {
+    padding: 70px 20px 30px;
+
+    background: #0f1724;
+
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* BRAND */
+
+.footer-brand {
+    text-align: center;
+}
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #138a43;
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+.footer-brand h3 {
+    margin-bottom: 7px;
+
+    font-size: 20px;
+
+    color: #ffffff;
+}
+
+.footer-brand p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #98a2b3;
+}
+
+
+/* DIVIDER */
+
+.footer-divider {
+    height: 1px;
+
+    margin: 40px 0;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* DISCLAIMER */
+
+.footer-disclaimer {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 22px 24px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.disclaimer-icon {
+    flex-shrink: 0;
+
+    color: #6ee7a0;
+
+    font-size: 18px;
+}
+
+.footer-disclaimer strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    color: #ffffff;
+}
+
+.footer-disclaimer p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.7;
+
+    color: #98a2b3;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin: 35px 0;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #6ee7a0;
+}
+
+
+/* BOTTOM */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #667085;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .job-footer {
+        padding: 55px 16px 25px;
+    }
+
+    .footer-divider {
+        margin: 30px 0;
+    }
+
+    .footer-disclaimer {
+        padding: 18px;
+    }
+
+    .footer-links {
+        gap: 18px;
+
+        margin: 30px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 8px;
+    }
+
+}
+
+.policy-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 23, 36, 0.75);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.policy-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.policy-box {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: #ffffff;
+    color: #172033;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+.policy-box h2 {
+    margin-bottom: 22px;
+    font-size: 30px;
+    color: #111827;
+}
+
+.policy-box p {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #667085;
+}
+
+.policy-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: #f2f4f3;
+    color: #596579;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.policy-close:hover {
+    background: #eaf7ee;
+    color: #138a43;
+}
+
+@media (max-width: 600px) {
+
+    .policy-box {
+        padding: 30px 22px;
+    }
+
+    .policy-box h2 {
+        font-size: 25px;
+    }
+
+}
