@@ -2514,3 +2514,17 @@ h1 span {
     }
 
 }
+
+.hero-logo {
+    text-align: left;
+    margin: 0 0 18px 18px;
+}
+
+.hero-logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+}
