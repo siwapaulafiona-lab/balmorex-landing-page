@@ -1,0 +1,12 @@
+
+{
+  "routes": [
+    {
+      "src": "/job-alerts\\.html",
+      "status": 404
+    },
+    {
+      "handle": "filesystem"
+    }
+  ]
+}
